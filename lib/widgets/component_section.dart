@@ -8,8 +8,9 @@ class ComponentSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Wrap(
+      spacing: 20,
+      runSpacing: 20,
       children: [
         ComponentBox(
           icon: Icons.person,

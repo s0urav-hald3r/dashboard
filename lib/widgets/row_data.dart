@@ -47,7 +47,7 @@ class RowData extends StatelessWidget {
                     ),
                     const Gap(7.5),
                     Text(
-                      'Full Name',
+                      'John Mark',
                       style: GoogleFonts.poppins(
                           fontSize: SizeConfig.screenWidth! * 0.0075,
                           fontWeight: FontWeight.w500,
@@ -62,6 +62,7 @@ class RowData extends StatelessWidget {
                     color: Colors.red.shade300,
                     borderRadius: BorderRadius.circular(5)),
                 width: SizeConfig.screenWidth! * 0.1,
+                padding: const EdgeInsets.symmetric(vertical: 5),
                 child: Center(
                   child: Text(
                     'Software Architect',
