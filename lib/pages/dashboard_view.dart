@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../constants/colors.dart';
+import '../widgets/component_section.dart';
 import '../widgets/search_box.dart';
 import '../widgets/user_box.dart';
 import '../widgets/welcome_text.dart';
@@ -37,6 +38,7 @@ class DashboardView extends StatelessWidget {
             const Gap(20),
             const AddNewButton(),
             const Gap(20),
+            const ComponentSection()
           ],
         ),
       ),
