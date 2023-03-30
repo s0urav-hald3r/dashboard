@@ -1,5 +1,5 @@
-import 'package:dashboard/widgets/row_data.dart';
-import 'package:dashboard/widgets/row_header.dart';
+import 'package:dashboard/widgets/openings_row_data.dart';
+import 'package:dashboard/widgets/openings_row_header.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -7,8 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../constants/colors.dart';
 import '../constants/size_configs.dart';
 
-class RecentCandidatesSection extends StatelessWidget {
-  const RecentCandidatesSection({
+class RecentOpeningsSection extends StatelessWidget {
+  const RecentOpeningsSection({
     super.key,
   });
 
@@ -26,7 +26,7 @@ class RecentCandidatesSection extends StatelessWidget {
           Row(
             children: [
               Text(
-                'Recent Candidates',
+                'Recent Open Positions',
                 style: GoogleFonts.poppins(
                     fontSize: SizeConfig.screenWidth! * 0.01,
                     fontWeight: FontWeight.w600,
@@ -35,12 +35,13 @@ class RecentCandidatesSection extends StatelessWidget {
             ],
           ),
           const Gap(10),
-          const RowHeader(),
+          const OpeningsRowHeader(),
           const Gap(10),
           Expanded(
             child: SingleChildScrollView(
                 child: Column(
-                    children: List.generate(10, (index) => const RowData()))),
+                    children:
+                        List.generate(7, (index) => const OpeningsRowData()))),
           )
         ],
       ),

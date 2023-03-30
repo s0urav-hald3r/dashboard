@@ -1,5 +1,8 @@
+import 'package:dashboard/constants/size_configs.dart';
 import 'package:dashboard/widgets/add_new_button.dart';
+import 'package:dashboard/widgets/recent_openings.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:gap/gap.dart';
 
 import '../constants/colors.dart';
@@ -20,6 +23,7 @@ class DashboardView extends StatelessWidget {
       flex: 5,
       child: Container(
         color: darkBlack,
+        height: SizeConfig.screenHeight,
         padding: const EdgeInsets.all(20),
         child: SingleChildScrollView(
           child: Column(
@@ -43,7 +47,23 @@ class DashboardView extends StatelessWidget {
               const Gap(20),
               const ComponentSection(),
               const Gap(20),
-              const RecentCandidatesSection()
+              StaggeredGrid.count(
+                crossAxisCount: 3,
+                mainAxisSpacing: 20,
+                crossAxisSpacing: 20,
+                children: const [
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 1,
+                    child: RecentCandidatesSection(),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 1,
+                    child: RecentOpeningsSection(),
+                  ),
+                ],
+              )
             ],
           ),
         ),
