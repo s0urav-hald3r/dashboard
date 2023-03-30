@@ -28,6 +28,7 @@ class RowData extends StatelessWidget {
                 color: Colors.transparent,
                 width: SizeConfig.screenWidth! * 0.1,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
                       width: SizeConfig.screenWidth! * 0.02,
@@ -76,34 +77,40 @@ class RowData extends StatelessWidget {
               Container(
                 color: Colors.transparent,
                 width: SizeConfig.screenWidth! * 0.075,
-                child: Text(
-                  'flutter-web@mystic.in',
-                  style: GoogleFonts.poppins(
-                      fontSize: SizeConfig.screenWidth! * 0.0075,
-                      fontWeight: FontWeight.w500,
-                      color: white60),
+                child: Center(
+                  child: Text(
+                    'flutter-web@mystic.in',
+                    style: GoogleFonts.poppins(
+                        fontSize: SizeConfig.screenWidth! * 0.0075,
+                        fontWeight: FontWeight.w500,
+                        color: white60),
+                  ),
                 ),
               ),
               Container(
                 color: Colors.transparent,
                 width: SizeConfig.screenWidth! * 0.075,
-                child: Text(
-                  '01-03-2023',
-                  style: GoogleFonts.poppins(
-                      fontSize: SizeConfig.screenWidth! * 0.0075,
-                      fontWeight: FontWeight.w500,
-                      color: white60),
+                child: Center(
+                  child: Text(
+                    '01-03-2023',
+                    style: GoogleFonts.poppins(
+                        fontSize: SizeConfig.screenWidth! * 0.0075,
+                        fontWeight: FontWeight.w500,
+                        color: white60),
+                  ),
                 ),
               ),
               Container(
                 color: Colors.transparent,
                 width: SizeConfig.screenWidth! * 0.03,
-                child: Text(
-                  '07',
-                  style: GoogleFonts.poppins(
-                      fontSize: SizeConfig.screenWidth! * 0.0075,
-                      fontWeight: FontWeight.w500,
-                      color: white60),
+                child: Center(
+                  child: Text(
+                    '07',
+                    style: GoogleFonts.poppins(
+                        fontSize: SizeConfig.screenWidth! * 0.0075,
+                        fontWeight: FontWeight.w500,
+                        color: white60),
+                  ),
                 ),
               ),
               Container(

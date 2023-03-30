@@ -16,67 +16,79 @@ class RowHeader extends StatelessWidget {
         Container(
           color: Colors.transparent,
           width: SizeConfig.screenWidth! * 0.1,
-          child: Text(
-            'Full Name',
-            style: GoogleFonts.poppins(
-                fontSize: SizeConfig.screenWidth! * 0.008,
-                fontWeight: FontWeight.w600,
-                color: Colors.white70),
+          child: Center(
+            child: Text(
+              'Full Name',
+              style: GoogleFonts.poppins(
+                  fontSize: SizeConfig.screenWidth! * 0.008,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white70),
+            ),
+          ),
+        ),
+        Container(
+          color: Colors.transparent,
+          width: SizeConfig.screenWidth! * 0.1,
+          child: Center(
+            child: Text(
+              'Applied Position',
+              style: GoogleFonts.poppins(
+                  fontSize: SizeConfig.screenWidth! * 0.008,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white70),
+            ),
           ),
         ),
         Container(
           color: Colors.transparent,
           width: SizeConfig.screenWidth! * 0.075,
-          child: Text(
-            'Applied Position',
-            style: GoogleFonts.poppins(
-                fontSize: SizeConfig.screenWidth! * 0.008,
-                fontWeight: FontWeight.w600,
-                color: Colors.white70),
+          child: Center(
+            child: Text(
+              'E-mail',
+              style: GoogleFonts.poppins(
+                  fontSize: SizeConfig.screenWidth! * 0.008,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white70),
+            ),
           ),
         ),
         Container(
           color: Colors.transparent,
           width: SizeConfig.screenWidth! * 0.075,
-          child: Text(
-            'E-mail',
-            style: GoogleFonts.poppins(
-                fontSize: SizeConfig.screenWidth! * 0.008,
-                fontWeight: FontWeight.w600,
-                color: Colors.white70),
-          ),
-        ),
-        Container(
-          color: Colors.transparent,
-          width: SizeConfig.screenWidth! * 0.075,
-          child: Text(
-            'Registration Date',
-            style: GoogleFonts.poppins(
-                fontSize: SizeConfig.screenWidth! * 0.008,
-                fontWeight: FontWeight.w600,
-                color: Colors.white70),
+          child: Center(
+            child: Text(
+              'Registration Date',
+              style: GoogleFonts.poppins(
+                  fontSize: SizeConfig.screenWidth! * 0.008,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white70),
+            ),
           ),
         ),
         Container(
           color: Colors.transparent,
           width: SizeConfig.screenWidth! * 0.03,
-          child: Text(
-            'Status',
-            style: GoogleFonts.poppins(
-                fontSize: SizeConfig.screenWidth! * 0.008,
-                fontWeight: FontWeight.w600,
-                color: Colors.white70),
+          child: Center(
+            child: Text(
+              'Status',
+              style: GoogleFonts.poppins(
+                  fontSize: SizeConfig.screenWidth! * 0.008,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white70),
+            ),
           ),
         ),
         Container(
           color: Colors.transparent,
           width: SizeConfig.screenWidth! * 0.075,
-          child: Text(
-            'Operation',
-            style: GoogleFonts.poppins(
-                fontSize: SizeConfig.screenWidth! * 0.008,
-                fontWeight: FontWeight.w600,
-                color: Colors.white70),
+          child: Center(
+            child: Text(
+              'Operation',
+              style: GoogleFonts.poppins(
+                  fontSize: SizeConfig.screenWidth! * 0.008,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white70),
+            ),
           ),
         ),
       ],
