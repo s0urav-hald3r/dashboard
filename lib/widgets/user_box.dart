@@ -16,7 +16,7 @@ class UserBox extends StatelessWidget {
       decoration: BoxDecoration(
         color: lightBlack,
         border: Border.all(color: white60, width: 0.25),
-        borderRadius: BorderRadius.circular(7.5),
+        borderRadius: BorderRadius.circular(10),
       ),
       padding: const EdgeInsets.all(12.5),
       child: Row(

@@ -17,7 +17,7 @@ class AddNewButton extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-              color: green, borderRadius: BorderRadius.circular(7.5)),
+              color: green, borderRadius: BorderRadius.circular(10)),
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
           child: Row(
             children: [

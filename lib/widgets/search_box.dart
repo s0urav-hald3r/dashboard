@@ -17,7 +17,7 @@ class SearchBox extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: lightBlack,
-        borderRadius: BorderRadius.circular(7.5),
+        borderRadius: BorderRadius.circular(10),
       ),
       padding: const EdgeInsets.all(7.5),
       child: Row(
