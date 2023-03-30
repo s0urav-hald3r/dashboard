@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../constants/colors.dart';
 import '../constants/size_configs.dart';
 
 class MenuItem extends StatelessWidget {
@@ -18,13 +19,13 @@ class MenuItem extends StatelessWidget {
           child: Image.asset(
             icon,
             width: SizeConfig.screenWidth! * 0.0125,
-            color: Colors.white60,
+            color: white60,
           ),
         ),
         Text(
           title,
           style: GoogleFonts.poppins(
-              fontSize: SizeConfig.screenWidth! * 0.01, color: Colors.white60),
+              fontSize: SizeConfig.screenWidth! * 0.01, color: white60),
         )
       ],
     );

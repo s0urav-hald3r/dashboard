@@ -6,8 +6,8 @@ import '../constants/colors.dart';
 import '../constants/size_configs.dart';
 import '../widgets/menu_item.dart';
 
-class CustomMenuSide extends StatelessWidget {
-  const CustomMenuSide({
+class MenuSide extends StatelessWidget {
+  const MenuSide({
     super.key,
   });
 
