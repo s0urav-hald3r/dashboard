@@ -14,6 +14,43 @@ class CalenderBox extends StatefulWidget {
 
 class _CalenderBoxState extends State<CalenderBox> {
   DateTime? _selectedDate;
+  final EventList<Event> _markedDateMap = EventList<Event>(
+    events: {
+      DateTime(2023, 03, 10): [
+        Event(
+          date: DateTime(2023, 03, 10),
+          title: 'Event 1',
+          dot: const EventDot(),
+        ),
+        Event(
+          date: DateTime(2023, 03, 10),
+          title: 'Event 2',
+          dot: const EventDot(),
+        ),
+      ],
+      DateTime(2023, 03, 05): [
+        Event(
+          date: DateTime(2023, 03, 05),
+          title: 'Event 1',
+          dot: const EventDot(),
+        ),
+      ],
+      DateTime(2023, 03, 17): [
+        Event(
+          date: DateTime(2023, 03, 17),
+          title: 'Event 1',
+          dot: const EventDot(),
+        ),
+      ],
+      DateTime(2023, 03, 27): [
+        Event(
+          date: DateTime(2023, 03, 27),
+          title: 'Event 1',
+          dot: const EventDot(),
+        ),
+      ],
+    },
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +109,25 @@ class _CalenderBoxState extends State<CalenderBox> {
         headerMargin: const EdgeInsets.only(top: 10, bottom: 20),
         weekDayMargin: const EdgeInsets.only(bottom: 10.0),
         iconColor: Colors.green,
+        markedDatesMap: _markedDateMap,
       ),
+    );
+  }
+}
+
+class EventDot extends StatelessWidget {
+  const EventDot({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(left: 2.5),
+      decoration:
+          const BoxDecoration(shape: BoxShape.circle, color: Colors.white),
+      height: 5.0,
+      width: 5.0,
     );
   }
 }
