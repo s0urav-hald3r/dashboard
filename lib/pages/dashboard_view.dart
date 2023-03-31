@@ -25,11 +25,12 @@ class DashboardView extends StatelessWidget {
       child: Container(
         color: darkBlack,
         height: SizeConfig.screenHeight,
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              const Gap(20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -60,7 +61,7 @@ class DashboardView extends StatelessWidget {
                   ),
                   StaggeredGridTile.count(
                     crossAxisCellCount: 1,
-                    mainAxisCellCount: 1.55,
+                    mainAxisCellCount: 1.5,
                     child: CalenderBox(),
                   ),
                   StaggeredGridTile.count(
@@ -69,7 +70,8 @@ class DashboardView extends StatelessWidget {
                     child: RecentOpeningsSection(),
                   ),
                 ],
-              )
+              ),
+              const Gap(20),
             ],
           ),
         ),

@@ -5,6 +5,7 @@ import 'package:percent_indicator/linear_percent_indicator.dart';
 
 import '../constants/colors.dart';
 import '../constants/size_configs.dart';
+import '../helpers/curve_painter.dart';
 
 class ComponentBox extends StatelessWidget {
   final Color primaryColor;
@@ -21,7 +22,7 @@ class ComponentBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: SizeConfig.screenWidth! * 0.15,
-      height: SizeConfig.screenHeight! * 0.15,
+      height: SizeConfig.screenHeight! * 0.25,
       decoration: BoxDecoration(
         color: lightBlack,
         borderRadius: BorderRadius.circular(10),
@@ -58,6 +59,37 @@ class ComponentBox extends StatelessWidget {
                     color: white60,
                   )
                 ],
+              )
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'Employee',
+                style: GoogleFonts.poppins(
+                    fontSize: SizeConfig.screenWidth! * 0.01, color: white60),
+              ),
+              SizedBox(
+                width: SizeConfig.screenWidth! * 0.05,
+                height: SizeConfig.screenHeight! * 0.05,
+                child: CustomPaint(
+                  painter: CurvePainter(xValues: [
+                    0.0,
+                    1.0,
+                    0.0,
+                    2.0,
+                    3.0,
+                    1.0,
+                    1.5,
+                  ], yValues: [
+                    0.0,
+                    1.0,
+                    2.0,
+                    3.0,
+                    4.0,
+                  ], strokeWidth: 2.0, color: primaryColor),
+                ),
               )
             ],
           ),

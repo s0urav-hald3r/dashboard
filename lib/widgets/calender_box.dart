@@ -64,6 +64,7 @@ class _CalenderBoxState extends State<CalenderBox> {
       ),
       padding: const EdgeInsets.all(10),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           CalendarCarousel<Event>(
             height: SizeConfig.screenHeight! * 0.5,
@@ -117,7 +118,6 @@ class _CalenderBoxState extends State<CalenderBox> {
             iconColor: Colors.green,
             markedDatesMap: _markedDateMap,
           ),
-          const Gap(20),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
