@@ -60,7 +60,7 @@ class DashboardView extends StatelessWidget {
                   ),
                   StaggeredGridTile.count(
                     crossAxisCellCount: 1,
-                    mainAxisCellCount: 1.5,
+                    mainAxisCellCount: 1.55,
                     child: CalenderBox(),
                   ),
                   StaggeredGridTile.count(

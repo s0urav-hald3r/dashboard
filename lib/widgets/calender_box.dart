@@ -124,7 +124,7 @@ class _CalenderBoxState extends State<CalenderBox> {
               Row(
                 children: [
                   Image.asset(
-                    'assets/icons/hand.png',
+                    'assets/icons/fire.png',
                     width: SizeConfig.screenWidth! * 0.01,
                   ),
                   const Gap(5),
@@ -136,11 +136,11 @@ class _CalenderBoxState extends State<CalenderBox> {
                   ),
                 ],
               ),
+              const Gap(20),
               Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(7.5)),
-                margin: const EdgeInsets.symmetric(vertical: 20),
                 child: Container(
                   decoration: BoxDecoration(
                       color: darkBlack,
