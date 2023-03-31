@@ -6,6 +6,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:gap/gap.dart';
 
 import '../constants/colors.dart';
+import '../widgets/calender_box.dart';
 import '../widgets/component_section.dart';
 import '../widgets/recent_candidates_section.dart';
 import '../widgets/search_box.dart';
@@ -56,6 +57,11 @@ class DashboardView extends StatelessWidget {
                     crossAxisCellCount: 2,
                     mainAxisCellCount: 1,
                     child: RecentCandidatesSection(),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 1,
+                    mainAxisCellCount: 1.5,
+                    child: CalenderBox(),
                   ),
                   StaggeredGridTile.count(
                     crossAxisCellCount: 2,
